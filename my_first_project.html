@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Подключение CSS к HTML</title>
+</head>
+<body>
+    <input type="button" onclick="countRabbits()" value="Считать кроликов!">
+    <h1>Привет, ты попал на мою первую html страницу!</h1>
+    <h2>Мои характеристики:<h2>
+      <ul>
+        <li>ФИО: Рыжов Андрей Алексадрович</li>
+        <li>28 лет</li>
+        <li>Проживаю на СЗ Челябинска</li>
+        <li>Мечтаю кодить как god 😇</li>
+        <li>Связь:@Andrewavaj 💌</li>
+      </ul>    
+    <div class="list-group">
+      <div class="list-group-item list-header" data-name="spoiler-title">
+        Показать больше информации (touch me)
+      </div>
+      <div class="list-group-item list-content spoiler-body">
+        <ul>
+          <li>Победитель всероссийского конкурса "Умник" Цифровая Россия", по тематике «Автоматизированная система определения остаточного ресурса узлов и агрегатов транспортной техники;</li>
+          <li>Финалист седьмого всероссийского конкурса научных работ среди студентов и аспирантов по транспортной проблематике на тему: «Внедрение «Цифрового двойника» в жизненный цикл локомотива»;</li>
+          <li>Участвовал в проектах по внедрению ПО – настройка, сопровождение, внедрение продуктов на базе ZIIoT в нефтегазовой отрасли, MES систем</li>
+          <li>Попытался освоить HTML, CSS, JS за 3 дня</li>
+          <li>P.S.0 Сверху слева можно посчитать кроликов</li>
+          <li>P.S.1 Фото котика, вместо себяы</li>
+         </ul>
+        <img src="https://www.zastavki.com/pictures/originals/2018Animals___Cats_Large_gray_cat_with_a_surprised_look_123712_.jpg" widht="200" height="200">   
+      </div>
+      <script>
+        const headers = document.querySelectorAll("[data-name='spoiler-title']");
+
+        headers.forEach(function (item) {
+          item.addEventListener("click", headerClick);
+        });
+        
+        function headerClick() {
+          
+          this.nextElementSibling.classList.toggle("spoiler-body");
+          }
+      </script>
+      <script>
+        function countRabbits() {
+          for(let i=1;i<5;i++){
+            alert("Кролик номер " + i);
+          }
+        }
+      </script>
+  </body>
+</html>

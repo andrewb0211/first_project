@@ -1,0 +1,30 @@
+body{
+    background-image:url(https://avatars.mds.yandex.net/i?id=4de2ce8090bc02484af6369d984ef722_l-4820765-images-thumbs&n=13);
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color: #E79198;
+}
+div {
+    max-width: 700px;
+    margin: left;
+    padding: 1px 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:whitesmoke;
+    text-align: left;
+    background-color: none;
+}
+.spoiler-body {
+    display: none;
+}
+.list-content {
+    background-color:none;
+    font-size: 1rem;
+  }
